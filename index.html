@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>ServicePilot AI | Smart Home Services</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+      <a href="#home" class="logo"> ✦ ServicePilot <span>AI</span> </a>
+
+      <button class="menu-toggle" id="menuToggle">☰</button>
+
+      <nav id="navbarMenu">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#ai-assistant">AI Assistant</a>
+        <a href="#booking">Booking</a>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-buttons" id="navButtons">
+        <a href="#login" class="btn-outline">Login</a>
+        <a href="#signup" class="btn-primary">Sign Up</a>
+      </div>
+    </header>
+
+    <!-- ================= HOME PAGE ================= -->
+
+    <main>
+      <section id="home" class="page active">
+        <div class="hero">
+          <div class="hero-content">
+            <span class="tag">SMART HOME SERVICE PLATFORM</span>
+
+            <h1>
+              Your Home,<br />
+              <span>Our Responsibility.</span>
+            </h1>
+
+            <p>
+              Book trusted home services with the power of Artificial
+              Intelligence. Find electricians, plumbers, cleaners and other
+              professionals at one platform.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="#services" class="btn-primary"> Explore Services → </a>
+
+              <a href="#ai-assistant" class="btn-outline"> Ask AI Assistant </a>
+            </div>
+
+            <div class="hero-stats">
+              <div>
+                <h3>2500+</h3>
+                <p>Happy Customers</p>
+              </div>
+
+              <div>
+                <h3>150+</h3>
+                <p>Professionals</p>
+              </div>
+
+              <div>
+                <h3>20+</h3>
+                <p>Services</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-image">
+            <img
+              src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=900"
+              alt="Modern home interior"
+            />
+          </div>
+        </div>
+
+        <div class="section-heading">
+          <span>OUR FEATURES</span>
+
+          <h2>Why Choose ServicePilot AI?</h2>
+
+          <p>Smart technology for your everyday home needs.</p>
+        </div>
+
+        <div class="feature-grid">
+          <div class="feature-card">
+            <h3>🤖 AI Assistance</h3>
+            <p>Get intelligent home-service recommendations.</p>
+          </div>
+
+          <div class="feature-card">
+            <h3>⚡ Quick Booking</h3>
+            <p>Book home services with a simple process.</p>
+          </div>
+
+          <div class="feature-card">
+            <h3>🛡 Trusted Services</h3>
+            <p>Find reliable home-service professionals.</p>
+          </div>
+
+          <div class="feature-card">
+            <h3>📊 Smart Dashboard</h3>
+            <p>Track your service requests in one place.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= LOGIN PAGE ================= -->
+
+      <section id="login" class="page auth-section">
+        <div class="form-container">
+          <h2>Welcome Back!</h2>
+
+          <p>Login to your ServicePilot AI account.</p>
+
+          <form id="loginForm">
+            <label>Email Address</label>
+
+            <input
+              type="email"
+              id="loginEmail"
+              placeholder="Enter your email"
+              required
+            />
+
+            <label>Password</label>
+
+            <input
+              type="password"
+              id="loginPassword"
+              placeholder="Enter password"
+              required
+            />
+
+            <button type="submit" class="btn-primary">Login</button>
+          </form>
+
+          <p>
+            Don't have an account?
+            <a href="#signup">Create Account</a>
+          </p>
+        </div>
+      </section>
+
+      <!-- ================= SIGNUP PAGE ================= -->
+
+      <section id="signup" class="page auth-section">
+        <div class="form-container">
+          <h2>Create Account</h2>
+
+          <p>Join ServicePilot AI today.</p>
+
+          <form id="signupForm">
+            <label>Full Name</label>
+
+            <input
+              type="text"
+              id="signupName"
+              placeholder="Enter your name"
+              required
+            />
+
+            <label>Email Address</label>
+
+            <input
+              type="email"
+              id="signupEmail"
+              placeholder="Enter your email"
+              required
+            />
+
+            <label>Password</label>
+
+            <input
+              type="password"
+              id="signupPassword"
+              placeholder="Create password"
+              minlength="6"
+              required
+            />
+
+            <label>Confirm Password</label>
+
+            <input
+              type="password"
+              id="confirmPassword"
+              placeholder="Confirm password"
+              required
+            />
+
+            <button type="submit" class="btn-primary">Create Account</button>
+          </form>
+
+          <p>
+            Already have an account?
+            <a href="#login">Login</a>
+          </p>
+        </div>
+      </section>
+
+      <!-- ================= SERVICES PAGE ================= -->
+
+      <section id="services" class="page">
+        <div class="section-heading">
+          <span>OUR SERVICES</span>
+
+          <h2>Explore Home Services</h2>
+
+          <p>Professional solutions for your home.</p>
+        </div>
+
+        <div class="service-grid">
+          <div class="service-card">
+            <div class="service-icon">⚡</div>
+
+            <h3>Electrical Services</h3>
+
+            <p>Electrical repairs, wiring, fans and lighting.</p>
+
+            <h4>Starting ₹299</h4>
+
+            <button class="btn-primary book-service" data-service="Electrical">
+              Book Now
+            </button>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">🔧</div>
+
+            <h3>Plumbing Services</h3>
+
+            <p>Pipe leakage, taps, bathroom and water repairs.</p>
+
+            <h4>Starting ₹249</h4>
+
+            <button class="btn-primary book-service" data-service="Plumbing">
+              Book Now
+            </button>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">🧹</div>
+
+            <h3>Home Cleaning</h3>
+
+            <p>Deep cleaning and complete home maintenance.</p>
+
+            <h4>Starting ₹499</h4>
+
+            <button class="btn-primary book-service" data-service="Cleaning">
+              Book Now
+            </button>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">❄️</div>
+
+            <h3>AC Repair</h3>
+
+            <p>AC servicing, installation and maintenance.</p>
+
+            <h4>Starting ₹399</h4>
+
+            <button class="btn-primary book-service" data-service="AC Repair">
+              Book Now
+            </button>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">🎨</div>
+
+            <h3>Painting Services</h3>
+
+            <p>Interior and exterior painting solutions.</p>
+
+            <h4>Get Estimate</h4>
+
+            <button class="btn-primary book-service" data-service="Painting">
+              Book Now
+            </button>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">🪛</div>
+
+            <h3>Appliance Repair</h3>
+
+            <p>Repair solutions for household appliances.</p>
+
+            <h4>Starting ₹349</h4>
+
+            <button
+              class="btn-primary book-service"
+              data-service="Appliance Repair"
+            >
+              Book Now
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= AI ASSISTANT PAGE ================= -->
+
+      <section id="ai-assistant" class="page">
+        <div class="section-heading">
+          <span>ARTIFICIAL INTELLIGENCE</span>
+
+          <h2>Meet Your AI Home Assistant</h2>
+
+          <p>Describe your home problem and get a suggested service.</p>
+        </div>
+
+        <div class="ai-container">
+          <div class="ai-header">
+            <div class="ai-avatar">🤖</div>
+
+            <div>
+              <h3>ServicePilot AI Assistant</h3>
+              <p>Smart Home-Service Assistant</p>
+            </div>
+
+            <span class="online-status">● Online</span>
+          </div>
+
+          <div id="chatMessages" class="chat-messages">
+            <div class="bot-message">
+              Hello! 👋 Welcome to ServicePilot AI. Tell me what problem you are
+              facing at home. I will suggest a suitable service.
+            </div>
+          </div>
+
+          <form id="chatForm" class="chat-input">
+            <input
+              type="text"
+              id="chatInput"
+              placeholder="Describe your home problem..."
+              required
+            />
+
+            <button type="submit">Send ➤</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- ================= BOOKING PAGE ================= -->
+
+      <section id="booking" class="page">
+        <div class="section-heading">
+          <span>BOOK YOUR SERVICE</span>
+
+          <h2>Schedule Your Home Service</h2>
+
+          <p>Complete the details below to request a service.</p>
+        </div>
+
+        <div class="form-container booking-container">
+          <form id="bookingForm">
+            <label>Customer Name</label>
+
+            <input
+              type="text"
+              id="customerName"
+              placeholder="Enter your name"
+              required
+            />
+
+            <label>Select Service</label>
+
+            <select id="bookingService" required>
+              <option value="">Choose a service</option>
+
+              <option>Electrical</option>
+
+              <option>Plumbing</option>
+
+              <option>Cleaning</option>
+
+              <option>AC Repair</option>
+
+              <option>Painting</option>
+
+              <option>Appliance Repair</option>
+            </select>
+
+            <label>Preferred Date</label>
+
+            <input type="date" id="bookingDate" required />
+
+            <label>Preferred Time</label>
+
+            <select id="bookingTime" required>
+              <option value="">Select Time</option>
+
+              <option>09:00 AM - 11:00 AM</option>
+
+              <option>11:00 AM - 01:00 PM</option>
+
+              <option>02:00 PM - 04:00 PM</option>
+
+              <option>04:00 PM - 06:00 PM</option>
+            </select>
+
+            <label>Address</label>
+
+            <textarea
+              id="bookingAddress"
+              placeholder="Enter complete address"
+              required
+            ></textarea>
+
+            <label>Describe Your Problem</label>
+
+            <textarea
+              id="bookingDescription"
+              placeholder="Describe your service requirement"
+            >
+            </textarea>
+
+            <button type="submit" class="btn-primary">Confirm Booking</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- ================= DASHBOARD PAGE ================= -->
+
+      <section id="dashboard" class="page">
+        <div class="section-heading">
+          <span>USER DASHBOARD</span>
+
+          <h2>Welcome to Your Dashboard</h2>
+
+          <p>Manage your home-service bookings.</p>
+        </div>
+
+        <div class="dashboard-container">
+          <div class="dashboard-stats">
+            <div class="dashboard-card">
+              <h3 id="totalBookings">0</h3>
+              <p>Total Bookings</p>
+            </div>
+
+            <div class="dashboard-card">
+              <h3 id="pendingBookings">0</h3>
+              <p>Pending Bookings</p>
+            </div>
+
+            <div class="dashboard-card">
+              <h3 id="completedBookings">0</h3>
+              <p>Completed Bookings</p>
+            </div>
+          </div>
+
+          <div class="booking-history">
+            <h2>My Booking History</h2>
+
+            <div id="bookingList">
+              <p>No bookings available yet.</p>
+            </div>
+          </div>
+
+          <div class="profile-box">
+            <h2>My Profile</h2>
+
+            <p id="profileName">Name: Guest</p>
+
+            <p id="profileEmail">Email: Not logged in</p>
+
+            <button id="dashboardLogout" class="btn-outline">Logout</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= CONTACT PAGE ================= -->
+
+      <section id="contact" class="page">
+        <div class="section-heading">
+          <span>CONTACT US</span>
+
+          <h2>Get In Touch With Us</h2>
+
+          <p>We are always ready to help you.</p>
+        </div>
+
+        <div class="contact-container">
+          <div class="contact-info">
+            <h2>Let's Talk!</h2>
+
+            <p>Have questions? Contact our team.</p>
+
+            <div class="contact-item">📧 hello@servicepilot.ai</div>
+
+            <div class="contact-item">📞 +91 98765 43210</div>
+
+            <div class="contact-item">📍 Bhopal, Madhya Pradesh</div>
+          </div>
+
+          <div class="form-container">
+            <form id="contactForm">
+              <label>Your Name</label>
+
+              <input
+                type="text"
+                id="contactName"
+                placeholder="Enter name"
+                required
+              />
+
+              <label>Email Address</label>
+
+              <input
+                type="email"
+                id="contactEmail"
+                placeholder="Enter email"
+                required
+              />
+
+              <label>Subject</label>
+
+              <input
+                type="text"
+                id="contactSubject"
+                placeholder="Enter subject"
+                required
+              />
+
+              <label>Message</label>
+
+              <textarea
+                id="contactMessage"
+                placeholder="Write your message..."
+                required
+              ></textarea>
+
+              <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= LOGOUT PAGE ================= -->
+
+      <section id="logout" class="page auth-section">
+        <div class="form-container logout-container">
+          <div class="logout-icon">✓</div>
+
+          <h2>You Have Logged Out!</h2>
+
+          <p>
+            Thank you for using ServicePilot AI. We hope to serve you again.
+          </p>
+
+          <a href="#home" class="btn-primary"> Back To Home </a>
+
+          <br /><br />
+
+          <a href="#login">Login Again</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+      <div class="footer-content">
+        <h2>✦ ServicePilot <span>AI</span></h2>
+
+        <p>
+          AI-powered home-service booking assistant. Making your home
+          maintenance smarter and easier.
+        </p>
+
+        <div class="footer-links">
+          <a href="#home">Home</a>
+
+          <a href="#services">Services</a>
+
+          <a href="#booking">Booking</a>
+
+          <a href="#contact">Contact</a>
+        </div>
+
+        <p class="copyright">© 2026 ServicePilot AI. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- ================= NOTIFICATION ================= -->
+
+    <div id="toast" class="toast"></div>
+
+    <!-- JAVASCRIPT FILE -->
+
+    <script src="app.js"></script>
+  </body>
+</html>
